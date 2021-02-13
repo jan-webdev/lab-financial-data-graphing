@@ -13,9 +13,9 @@
     axios
       .get(`http://api.coindesk.com/v1/bpi/historical/close.json`)
       .then(response => {
-        console.log('Response from API is: ', response['\'bpi\'']);
         // document.getElementById("demo").innerHTML = ;
-  console.log("response 1", response);
+  console.log("response 1", response.data);
+  console.log('Response from API is: ', response.data['bpi']);
   console.log("response 1.1", response["2021-01-13"]);
   console.log("response 2", response[2020-10-19]);
   console.log("response 3", response["bpi"]["2020-10-19"]);
