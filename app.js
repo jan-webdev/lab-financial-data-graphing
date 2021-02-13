@@ -4,6 +4,8 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+// requiring axios to be able to use autocomplete for its methods
+// const axios = require('axios').default;
 
 const app = express();
 

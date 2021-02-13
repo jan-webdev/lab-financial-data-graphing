@@ -5,10 +5,30 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     {{!-- We're using Axios via CDN --}}
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
   </head>
   <body>
     <h1> {{title}} </h1>
     <p>Welcome to  {{title}} </p>
-  </body>
+
+<h1>Countries Info</h1>
+ 
+    <div>
+      <label for="country-name-input">Country name</label>
+      <input id="country-name-input" type="text" alt=" " />
+      <button id="get-country-btn">Get the country</button>
+    </div>
+ 
+    <h2 id="country-name"></h2>
+    <p id="country-capital"></p>
+    <div>
+      <img id="country-flag" src="" height="200px" alt="" />
+    </div>
+ 
+ <div class="demo" id="demo">TEEEST</div>
+
+
   <script src="/javascripts/financial-data.js" charset="utf-8"></script>
+  </body>
+  
 </html>
